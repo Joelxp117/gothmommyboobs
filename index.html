@@ -6,393 +6,426 @@
     <title>gothmommyboobs.xyz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        /* ===== DEIN BESTEHENDES CSS (alles wie gehabt) ===== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-    background: #0d0d0d;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+        body {
+            background: #0d0d0d;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+        }
 
-.container {
-    max-width: 1300px;
-    width: 100%;
-    background: rgba(20, 20, 30, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 48px;
-    padding: 30px 35px 40px 35px;
-    box-shadow: 0 25px 50px -8px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-}
+        .container {
+            max-width: 1300px;
+            width: 100%;
+            background: rgba(20, 20, 30, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 48px;
+            padding: 30px 35px 40px 35px;
+            box-shadow: 0 25px 50px -8px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
 
-/* ===== HEADER (unverändert) ===== */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-.rainbow-header {
-    font-size: clamp(2.2rem, 6vw, 4.2rem);
-    font-weight: 900;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #ff0000, #ff7700, #ffff00, #00ff00, #0077ff, #8b00ff, #ff00ff, #ff0000);
-    background-size: 400% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: rainbowSlide 2.5s linear infinite;
-    text-shadow: 0 0 30px rgba(255, 0, 255, 0.15);
-    user-select: none;
-}
-@keyframes rainbowSlide { 0% { background-position: 0% 50%; } 100% { background-position: 400% 50%; } }
+        .rainbow-header {
+            font-size: clamp(2.2rem, 6vw, 4.2rem);
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ff0000, #ff7700, #ffff00, #00ff00, #0077ff, #8b00ff, #ff00ff, #ff0000);
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rainbowSlide 2.5s linear infinite;
+            text-shadow: 0 0 30px rgba(255, 0, 255, 0.15);
+            user-select: none;
+        }
+        @keyframes rainbowSlide { 0% { background-position: 0% 50%; } 100% { background-position: 400% 50%; } }
 
-.email-icon {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 60px;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-decoration: none;
-}
-.email-icon i { font-size: 1.6rem; color: #b0b0ff; transition: transform 0.3s ease; }
-.email-icon:hover { background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.2); transform: scale(1.02); }
-.email-icon:hover i { transform: rotate(-10deg) scale(1.1); color: #d0d0ff; }
+        .email-icon {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 60px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .email-icon i { font-size: 1.6rem; color: #b0b0ff; transition: transform 0.3s ease; }
+        .email-icon:hover { background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.2); transform: scale(1.02); }
+        .email-icon:hover i { transform: rotate(-10deg) scale(1.1); color: #d0d0ff; }
 
-/* ===== MAIN – IMMER NEBENEINANDER (auch auf Handy) ===== */
-.main-content {
-    display: flex;
-    flex-wrap: nowrap;  /* ← NIE umbrechen! */
-    gap: 5px;
-    align-items: stretch;
-}
+        .main-content {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            align-items: stretch;
+        }
 
-.profile-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 0; /* Erlaubt Schrumpfen */
-}
+        .profile-left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 0;
+        }
 
-.discord-card {
-    background: rgba(30, 30, 45, 0.7);
-    border-radius: 32px;
-    padding: 30px 35px 35px 35px;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(6px);
-    transition: transform 0.25s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-.discord-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8);
-}
+        .discord-card {
+            background: rgba(30, 30, 45, 0.7);
+            border-radius: 32px;
+            padding: 30px 35px 35px 35px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .discord-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8);
+        }
 
-.discord-avatar {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    object-fit: cover;
-    margin-bottom: 16px;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-}
+        .discord-avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            object-fit: cover;
+            margin-bottom: 16px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
 
-.discord-name {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.5px;
-}
-.discord-id {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.4);
-    margin-top: 2px;
-}
+        .discord-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+        .discord-id {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 2px;
+        }
 
-.discord-badge {
-    display: inline-block;
-    margin-top: 12px;
-    background: rgba(88, 101, 242, 0.18);
-    padding: 6px 18px;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    color: #aab0ff;
-    border: 1px solid rgba(88, 101, 242, 0.15);
-    font-weight: 500;
-}
-.badge-dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 6px;
-    vertical-align: middle;
-    transition: background 0.3s ease;
-}
+        .discord-badge {
+            display: inline-block;
+            margin-top: 12px;
+            background: rgba(88, 101, 242, 0.18);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: #aab0ff;
+            border: 1px solid rgba(88, 101, 242, 0.15);
+            font-weight: 500;
+        }
+        .badge-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+            transition: background 0.3s ease;
+        }
 
-.discord-status {
-    margin-top: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-.status-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-}
+        .discord-status {
+            margin-top: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
 
-.last-seen {
-    margin-top: 8px;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.35);
-    transition: all 0.3s ease;
-}
+        .last-seen {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.35);
+            transition: all 0.3s ease;
+        }
 
-.right-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 10px 0;
-    padding-left: 0;
-    min-width: 0; /* Erlaubt Schrumpfen */
-}
+        .right-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            padding: 10px 0;
+            padding-left: 0;
+            min-width: 0;
+        }
 
-.main-message {
-    font-size: clamp(2rem, 4.5vw, 3.5rem);
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 1.4;
-    letter-spacing: -0.5px;
-    text-shadow: 0 4px 30px rgba(200, 150, 255, 0.15);
-}
-.main-message .emoji {
-    display: inline-block;
-    animation: floatEmoji 3s ease-in-out infinite;
-}
-@keyframes floatEmoji { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+        .main-message {
+            font-size: clamp(2rem, 4.5vw, 3.5rem);
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            text-shadow: 0 4px 30px rgba(200, 150, 255, 0.15);
+        }
+        .main-message .emoji {
+            display: inline-block;
+            animation: floatEmoji 3s ease-in-out infinite;
+        }
+        @keyframes floatEmoji { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 
-.arrows {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    margin-left: -10px;
-}
-.arrow-link {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    transition: transform 0.2s ease, color 0.2s ease, filter 0.2s ease;
-    line-height: 1;
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
-}
-.arrow-link:hover {
-    transform: scale(1.25);
-    color: #aab0ff;
-    filter: drop-shadow(0 0 25px rgba(136, 146, 255, 0.9));
-}
-.arrow {
-    font-size: 3rem;
-    display: block;
-    line-height: 1;
-    animation: bounceArrowLeft 1.6s infinite ease-in-out;
-}
-.arrow-link:nth-child(1) .arrow { animation-delay: 0s; }
-.arrow-link:nth-child(2) .arrow { animation-delay: 0.12s; }
-.arrow-link:nth-child(3) .arrow { animation-delay: 0.24s; }
-.arrow-link:nth-child(4) .arrow { animation-delay: 0.36s; }
-.arrow-link:nth-child(5) .arrow { animation-delay: 0.48s; }
-@keyframes bounceArrowLeft {
-    0%, 100% { transform: translateX(0) scale(1); opacity: 0.8; }
-    50% { transform: translateX(-15px) scale(1.15); opacity: 1; }
-}
+        .arrows {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            margin-left: -10px;
+        }
+        .arrow-link {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            transition: transform 0.2s ease, color 0.2s ease, filter 0.2s ease;
+            line-height: 1;
+            filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+        }
+        .arrow-link:hover {
+            transform: scale(1.25);
+            color: #aab0ff;
+            filter: drop-shadow(0 0 25px rgba(136, 146, 255, 0.9));
+        }
+        .arrow {
+            font-size: 3rem;
+            display: block;
+            line-height: 1;
+            animation: bounceArrowLeft 1.6s infinite ease-in-out;
+        }
+        .arrow-link:nth-child(1) .arrow { animation-delay: 0s; }
+        .arrow-link:nth-child(2) .arrow { animation-delay: 0.12s; }
+        .arrow-link:nth-child(3) .arrow { animation-delay: 0.24s; }
+        .arrow-link:nth-child(4) .arrow { animation-delay: 0.36s; }
+        .arrow-link:nth-child(5) .arrow { animation-delay: 0.48s; }
+        @keyframes bounceArrowLeft {
+            0%, 100% { transform: translateX(0) scale(1); opacity: 0.8; }
+            50% { transform: translateX(-15px) scale(1.15); opacity: 1; }
+        }
 
-/* ===== MODAL (unverändert) ===== */
-.modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.modal-overlay.active { display: flex; }
-.modal-box {
-    background: #1a1a28;
-    border-radius: 40px;
-    max-width: 500px;
-    width: 100%;
-    padding: 40px 35px 35px 35px;
-    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    position: relative;
-    animation: modalIn 0.3s ease;
-    text-align: center;
-}
-@keyframes modalIn { 0% { opacity: 0; transform: scale(0.95) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
-.modal-close {
-    position: absolute;
-    top: 18px;
-    right: 22px;
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-.modal-close:hover { color: #fff; }
-.modal-box h2 { color: #fff; font-size: 1.8rem; font-weight: 600; margin-bottom: 6px; }
-.modal-box p { color: rgba(255, 255, 255, 0.35); margin-bottom: 20px; font-size: 0.95rem; }
-.modal-box .mail-link {
-    display: inline-block;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.06);
-    padding: 14px 32px;
-    border-radius: 40px;
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-.modal-box .mail-link:hover { background: rgba(255, 255, 255, 0.10); border-color: rgba(255, 255, 255, 0.15); transform: scale(1.02); }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-box {
+            background: #1a1a28;
+            border-radius: 40px;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 35px 35px 35px;
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            animation: modalIn 0.3s ease;
+            text-align: center;
+        }
+        @keyframes modalIn { 0% { opacity: 0; transform: scale(0.95) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .modal-close:hover { color: #fff; }
+        .modal-box h2 { color: #fff; font-size: 1.8rem; font-weight: 600; margin-bottom: 6px; }
+        .modal-box p { color: rgba(255, 255, 255, 0.35); margin-bottom: 20px; font-size: 0.95rem; }
+        .modal-box .mail-link {
+            display: inline-block;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 14px 32px;
+            border-radius: 40px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .modal-box .mail-link:hover { background: rgba(255, 255, 255, 0.10); border-color: rgba(255, 255, 255, 0.15); transform: scale(1.02); }
 
-/* ============================================================
-   NEUE MEDIA QUERIES – ALLES BLEIBT NEBENEINANDER, NUR KLEINER
-   ============================================================ */
+        /* ============================================================
+           OPTIMIERTE MEDIA QUERIES – HANDY: 85% BILDSCHIRM, GRÖSSER
+           ============================================================ */
 
-/* Tablets & kleine Laptops */
-@media (max-width: 1024px) {
-    .container { padding: 20px; }
-    .discord-avatar { width: 100px; height: 100px; }
-    .discord-name { font-size: 1.6rem; }
-    .main-message { font-size: clamp(1.6rem, 4vw, 2.8rem); }
-    .arrow { font-size: 2.4rem; }
-    .discord-card { padding: 20px 25px; }
-}
+        /* Tablets & kleine Laptops */
+        @media (max-width: 1024px) {
+            .container { padding: 20px; }
+            .discord-avatar { width: 110px; height: 110px; }
+            .discord-name { font-size: 1.8rem; }
+            .main-message { font-size: clamp(1.8rem, 4vw, 3rem); }
+            .arrow { font-size: 2.6rem; }
+        }
 
-/* Handys (breit) – ALLES BLEIBT NEBENEINANDER */
-@media (max-width: 768px) {
-    .container { 
-        padding: 15px; 
-        border-radius: 28px;
-    }
-    .main-content { 
-        gap: 3px; /* noch enger */
-    }
-    .discord-card { 
-        padding: 15px 12px; 
-        border-radius: 20px;
-    }
-    .discord-avatar { 
-        width: 70px; 
-        height: 70px; 
-        margin-bottom: 10px;
-    }
-    .discord-name { 
-        font-size: 1.2rem; 
-    }
-    .discord-id { 
-        font-size: 0.7rem; 
-    }
-    .discord-badge { 
-        font-size: 0.65rem; 
-        padding: 4px 12px;
-        margin-top: 8px;
-    }
-    .discord-status { 
-        font-size: 0.75rem; 
-        margin-top: 8px;
-    }
-    .status-dot { 
-        width: 8px; 
-        height: 8px; 
-    }
-    .last-seen { 
-        font-size: 0.6rem; 
-        margin-top: 4px;
-    }
-    .main-message { 
-        font-size: clamp(1rem, 3vw, 1.6rem); 
-        line-height: 1.2;
-    }
-    .arrows { 
-        gap: 0px; 
-        margin-left: -5px;
-    }
-    .arrow { 
-        font-size: 1.8rem; 
-    }
-    .arrow-link:hover { transform: scale(1.1); }
-    .rainbow-header { font-size: 1.4rem; }
-    .email-icon { 
-        padding: 6px 12px; 
-        font-size: 0.8rem;
-        gap: 6px;
-    }
-    .email-icon i { font-size: 1.2rem; }
-    .email-icon span { display: inline; } /* Text bleibt sichtbar */
-    .modal-box { padding: 25px 20px; }
-    .modal-box h2 { font-size: 1.3rem; }
-}
+        /* HANDYS – ALLES WIRD GRÖSSER UND FÜLLT DEN BILDSCHIRM */
+        @media (max-width: 768px) {
+            body { padding: 6px; } /* Weniger Außenabstand */
+            
+            .container { 
+                padding: 16px 14px 20px 14px; 
+                border-radius: 28px;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .main-content { 
+                gap: 4px;
+                flex-wrap: nowrap;
+            }
+            
+            .discord-card { 
+                padding: 18px 16px 20px 16px; 
+                border-radius: 24px;
+            }
+            
+            .discord-avatar { 
+                width: 90px; 
+                height: 90px; 
+                margin-bottom: 12px;
+            }
+            
+            .discord-name { 
+                font-size: 1.6rem; 
+            }
+            .discord-id { 
+                font-size: 0.75rem; 
+            }
+            .discord-badge { 
+                font-size: 0.7rem; 
+                padding: 5px 14px;
+                margin-top: 10px;
+            }
+            .discord-status { 
+                font-size: 0.85rem; 
+                margin-top: 10px;
+            }
+            .status-dot { 
+                width: 10px; 
+                height: 10px; 
+            }
+            .last-seen { 
+                font-size: 0.7rem; 
+                margin-top: 6px;
+            }
+            
+            .right-content {
+                gap: 12px;
+                padding: 4px 0;
+            }
+            
+            .main-message { 
+                font-size: clamp(1.4rem, 3.5vw, 2.2rem); 
+                line-height: 1.2;
+            }
+            
+            .arrows { 
+                gap: 1px; 
+                margin-left: -4px;
+            }
+            .arrow { 
+                font-size: 2.4rem; 
+            }
+            
+            .rainbow-header { 
+                font-size: 1.6rem; 
+                letter-spacing: 1px;
+            }
+            
+            /* Nur das Icon anzeigen, Text ausblenden */
+            .email-icon span { 
+                display: none; 
+            }
+            .email-icon { 
+                padding: 10px 14px; 
+                border-radius: 50%; /* Rundes Icon */
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .email-icon i { 
+                font-size: 1.4rem; 
+                margin: 0;
+            }
+            .email-icon:hover {
+                background: rgba(255, 255, 255, 0.15);
+                transform: scale(1.05);
+            }
+            
+            .modal-box { padding: 25px 20px; }
+            .modal-box h2 { font-size: 1.4rem; }
+        }
 
-/* Kleine Handys (z.B. iPhone SE) */
-@media (max-width: 420px) {
-    .container { padding: 10px; border-radius: 20px; }
-    .discord-avatar { width: 55px; height: 55px; }
-    .discord-name { font-size: 1rem; }
-    .discord-id { font-size: 0.55rem; }
-    .discord-badge { font-size: 0.5rem; padding: 3px 8px; }
-    .discord-status { font-size: 0.6rem; }
-    .status-dot { width: 6px; height: 6px; }
-    .last-seen { font-size: 0.5rem; }
-    .main-message { font-size: clamp(0.8rem, 2.5vw, 1.2rem); }
-    .arrow { font-size: 1.4rem; }
-    .rainbow-header { font-size: 1rem; }
-    .email-icon { padding: 4px 8px; font-size: 0.6rem; }
-    .email-icon i { font-size: 0.9rem; }
-    .header { gap: 8px; padding-bottom: 10px; margin-bottom: 15px; }
-    .discord-card { padding: 10px 8px; }
-}
+        /* KLEINE HANDYS (z.B. iPhone SE, 375px breit) */
+        @media (max-width: 420px) {
+            body { padding: 4px; }
+            .container { padding: 12px 10px 16px 10px; border-radius: 20px; }
+            
+            .discord-avatar { width: 72px; height: 72px; margin-bottom: 8px; }
+            .discord-name { font-size: 1.3rem; }
+            .discord-id { font-size: 0.6rem; }
+            .discord-badge { font-size: 0.55rem; padding: 3px 10px; margin-top: 6px; }
+            .discord-status { font-size: 0.7rem; margin-top: 6px; }
+            .status-dot { width: 8px; height: 8px; }
+            .last-seen { font-size: 0.55rem; margin-top: 4px; }
+            .discord-card { padding: 12px 10px 14px 10px; border-radius: 18px; }
+            
+            .main-message { font-size: clamp(1rem, 3vw, 1.4rem); }
+            .arrow { font-size: 2rem; }
+            .arrows { margin-left: -2px; gap: 0px; }
+            
+            .rainbow-header { font-size: 1.2rem; }
+            .email-icon { padding: 6px 10px; }
+            .email-icon i { font-size: 1.1rem; }
+            
+            .header { gap: 6px; padding-bottom: 10px; margin-bottom: 16px; }
+        }
     </style>
 </head>
 <body>
@@ -463,7 +496,7 @@ body {
     modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) modal.classList.remove('active'); });
 
-    // ===== LANYARD API mit EIGENEM "Last seen" =====
+    // ===== LANYARD API =====
     const USER_ID = '156129424238968832';
     const API_URL = `https://api.lanyard.rest/v1/users/${USER_ID}`;
 
@@ -473,11 +506,9 @@ body {
     const badgeText = document.getElementById('badgeText');
     const lastSeen = document.getElementById('lastSeen');
 
-    // Schlüssel für localStorage
     const LAST_SEEN_KEY = 'discord_last_seen';
     const LAST_STATUS_KEY = 'discord_last_status';
 
-    // Lade gespeicherte Werte
     let savedLastSeen = localStorage.getItem(LAST_SEEN_KEY);
     let savedStatus = localStorage.getItem(LAST_STATUS_KEY);
 
@@ -498,7 +529,6 @@ body {
     }
 
     function updateUI(status, lastSeenTimestamp) {
-        // Farben und Labels
         let color, label;
         switch(status) {
             case 'online':   color = '#3ba55c'; label = 'Online'; break;
@@ -512,15 +542,12 @@ body {
         badgeDot.style.background = color;
         badgeText.textContent = label;
 
-        // Last-Seen-Logik: NUR bei offline den gespeicherten Zeitpunkt anzeigen
         if (status === 'offline' && lastSeenTimestamp) {
             const timeAgo = formatTimeAgo(lastSeenTimestamp);
             lastSeen.textContent = `Last seen: ${timeAgo}`;
         } else if (status === 'offline' && !lastSeenTimestamp) {
-            // Falls kein Zeitpunkt gespeichert ist (z.B. erster Besuch)
             lastSeen.textContent = 'Last seen: unknown (go online once)';
         } else {
-            // online, idle, dnd → immer "Active now"
             lastSeen.textContent = '🟢 Active now';
         }
     }
@@ -532,29 +559,21 @@ body {
                 return response.json();
             })
             .then(data => {
-                console.log('Lanyard API:', data); // Debug
-
+                console.log('Lanyard API:', data);
                 if (data.success && data.data) {
                     const newStatus = data.data.discord_status;
                     const previousStatus = savedStatus;
 
-                    // === EIGENE LAST-SEEN-LOGIK ===
-                    // Wenn der Status von "nicht offline" auf "offline" wechselt → speichere Zeitpunkt
                     if (newStatus === 'offline' && previousStatus !== 'offline') {
                         const now = Math.floor(Date.now() / 1000);
                         localStorage.setItem(LAST_SEEN_KEY, now);
                         savedLastSeen = now;
                         console.log('🔴 Offline erkannt – Last seen gespeichert:', now);
                     }
-                    // Wenn der Status wieder online wird → lösche den gespeicherten Zeitpunkt (optional)
-                    // Wir lassen ihn aber stehen, falls er später wieder offline geht.
-                    // Bei online zeigen wir sowieso "Active now".
 
-                    // Speichere den aktuellen Status für den nächsten Vergleich
                     localStorage.setItem(LAST_STATUS_KEY, newStatus);
                     savedStatus = newStatus;
 
-                    // Hole den gespeicherten last_seen (falls vorhanden)
                     let lastSeenTimestamp = localStorage.getItem(LAST_SEEN_KEY);
                     if (lastSeenTimestamp) {
                         lastSeenTimestamp = parseInt(lastSeenTimestamp, 10);
@@ -562,7 +581,6 @@ body {
                         lastSeenTimestamp = null;
                     }
 
-                    // UI aktualisieren
                     updateUI(newStatus, lastSeenTimestamp);
                 } else {
                     throw new Error('Invalid API response');
@@ -570,12 +588,10 @@ body {
             })
             .catch(err => {
                 console.error('Lanyard error:', err);
-                // Fallback: zeige "Error" und behalte den zuletzt gespeicherten Status
                 statusDot.style.background = '#747f8d';
                 statusText.textContent = 'Error';
                 badgeDot.style.background = '#747f8d';
                 badgeText.textContent = 'Error';
-                // Versuche, den letzten bekannten Offline-Zeitpunkt zu zeigen
                 const last = localStorage.getItem(LAST_SEEN_KEY);
                 if (last) {
                     const ts = parseInt(last, 10);
@@ -586,15 +602,11 @@ body {
             });
     }
 
-    // Initial: setze den Status aus dem localStorage, falls vorhanden
     if (savedStatus) {
-        // Zeige den zuletzt bekannten Status an (als Platzhalter)
-        // Aber wir überschreiben es beim ersten API-Call
         const lastSeenTimestamp = localStorage.getItem(LAST_SEEN_KEY) ? parseInt(localStorage.getItem(LAST_SEEN_KEY), 10) : null;
         updateUI(savedStatus, lastSeenTimestamp);
     }
 
-    // Alle 5 Sekunden abrufen
     fetchStatus();
     setInterval(fetchStatus, 5000);
 </script>
