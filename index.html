@@ -30,15 +30,14 @@
             border: 1px solid rgba(255, 255, 255, 0.04);
         }
 
+        /* ===== HEADER – jetzt linksbündig ===== */
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;  /* ← links ausgerichtet */
             align-items: center;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             margin-bottom: 30px;
-            flex-wrap: wrap;
-            gap: 15px;
         }
 
         .rainbow-header {
@@ -56,25 +55,6 @@
             user-select: none;
         }
         @keyframes rainbowSlide { 0% { background-position: 0% 50%; } 100% { background-position: 400% 50%; } }
-
-        .email-icon {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 60px;
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #fff;
-            font-size: 1.1rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .email-icon i { font-size: 1.6rem; color: #b0b0ff; transition: transform 0.3s ease; }
-        .email-icon:hover { background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.2); transform: scale(1.02); }
-        .email-icon:hover i { transform: rotate(-10deg) scale(1.1); color: #d0d0ff; }
 
         .main-content {
             display: flex;
@@ -238,65 +218,10 @@
             50% { transform: translateX(-15px) scale(1.15); opacity: 1; }
         }
 
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            z-index: 999;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .modal-overlay.active { display: flex; }
-        .modal-box {
-            background: #1a1a28;
-            border-radius: 40px;
-            max-width: 500px;
-            width: 100%;
-            padding: 40px 35px 35px 35px;
-            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            position: relative;
-            animation: modalIn 0.3s ease;
-            text-align: center;
-        }
-        @keyframes modalIn { 0% { opacity: 0; transform: scale(0.95) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
-        .modal-close {
-            position: absolute;
-            top: 18px;
-            right: 22px;
-            background: none;
-            border: none;
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 1.8rem;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        .modal-close:hover { color: #fff; }
-        .modal-box h2 { color: #fff; font-size: 1.8rem; font-weight: 600; margin-bottom: 6px; }
-        .modal-box p { color: rgba(255, 255, 255, 0.35); margin-bottom: 20px; font-size: 0.95rem; }
-        .modal-box .mail-link {
-            display: inline-block;
-            margin-top: 10px;
-            background: rgba(255, 255, 255, 0.06);
-            padding: 14px 32px;
-            border-radius: 40px;
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        .modal-box .mail-link:hover { background: rgba(255, 255, 255, 0.10); border-color: rgba(255, 255, 255, 0.15); transform: scale(1.02); }
-
         /* ============================================================
-           OPTIMIERTE MEDIA QUERIES – HANDY: 85% BILDSCHIRM, GRÖSSER
+           HANDY-OPTIMIERUNG (unverändert)
            ============================================================ */
 
-        /* Tablets & kleine Laptops */
         @media (max-width: 1024px) {
             .container { padding: 20px; }
             .discord-avatar { width: 110px; height: 110px; }
@@ -305,108 +230,37 @@
             .arrow { font-size: 2.6rem; }
         }
 
-        /* HANDYS – ALLES WIRD GRÖSSER UND FÜLLT DEN BILDSCHIRM */
         @media (max-width: 768px) {
-            body { padding: 6px; } /* Weniger Außenabstand */
-            
-            .container { 
-                padding: 16px 14px 20px 14px; 
+            body { padding: 6px; }
+            .container {
+                padding: 16px 14px 20px 14px;
                 border-radius: 28px;
                 width: 100%;
                 max-width: 100%;
             }
-            
-            .main-content { 
-                gap: 4px;
-                flex-wrap: nowrap;
-            }
-            
-            .discord-card { 
-                padding: 18px 16px 20px 16px; 
-                border-radius: 24px;
-            }
-            
-            .discord-avatar { 
-                width: 90px; 
-                height: 90px; 
-                margin-bottom: 12px;
-            }
-            
-            .discord-name { 
-                font-size: 1.6rem; 
-            }
-            .discord-id { 
-                font-size: 0.75rem; 
-            }
-            .discord-badge { 
-                font-size: 0.7rem; 
-                padding: 5px 14px;
-                margin-top: 10px;
-            }
-            .discord-status { 
-                font-size: 0.85rem; 
-                margin-top: 10px;
-            }
-            .status-dot { 
-                width: 10px; 
-                height: 10px; 
-            }
-            .last-seen { 
-                font-size: 0.7rem; 
-                margin-top: 6px;
-            }
-            
-            .right-content {
-                gap: 12px;
-                padding: 4px 0;
-            }
-            
-            .main-message { 
-                font-size: clamp(1.4rem, 3.5vw, 2.2rem); 
-                line-height: 1.2;
-            }
-            
-            .arrows { 
-                gap: 1px; 
-                margin-left: -4px;
-            }
-            .arrow { 
-                font-size: 2.4rem; 
-            }
-            
-            .rainbow-header { 
-                font-size: 1.6rem; 
-                letter-spacing: 1px;
-            }
-            
-            /* Nur das Icon anzeigen, Text ausblenden */
-            .email-icon span { 
-                display: none; 
-            }
-            .email-icon { 
-                padding: 10px 14px; 
-                border-radius: 50%; /* Rundes Icon */
-                background: rgba(255, 255, 255, 0.08);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-            }
-            .email-icon i { 
-                font-size: 1.4rem; 
-                margin: 0;
-            }
-            .email-icon:hover {
-                background: rgba(255, 255, 255, 0.15);
-                transform: scale(1.05);
-            }
-            
-            .modal-box { padding: 25px 20px; }
-            .modal-box h2 { font-size: 1.4rem; }
+            .header { padding-bottom: 12px; margin-bottom: 20px; }
+            .rainbow-header { font-size: 1.6rem; letter-spacing: 1px; }
+            .main-content { gap: 4px; flex-wrap: nowrap; }
+            .discord-card { padding: 18px 16px 20px 16px; border-radius: 24px; }
+            .discord-avatar { width: 90px; height: 90px; margin-bottom: 12px; }
+            .discord-name { font-size: 1.6rem; }
+            .discord-id { font-size: 0.75rem; }
+            .discord-badge { font-size: 0.7rem; padding: 5px 14px; margin-top: 10px; }
+            .discord-status { font-size: 0.85rem; margin-top: 10px; }
+            .status-dot { width: 10px; height: 10px; }
+            .last-seen { font-size: 0.7rem; margin-top: 6px; }
+            .right-content { gap: 12px; padding: 4px 0; }
+            .main-message { font-size: clamp(1.4rem, 3.5vw, 2.2rem); line-height: 1.2; }
+            .arrows { gap: 1px; margin-left: -4px; }
+            .arrow { font-size: 2.4rem; }
         }
 
-        /* KLEINE HANDYS (z.B. iPhone SE, 375px breit) */
         @media (max-width: 420px) {
             body { padding: 4px; }
             .container { padding: 12px 10px 16px 10px; border-radius: 20px; }
-            
+            .header { padding-bottom: 8px; margin-bottom: 14px; }
+            .rainbow-header { font-size: 1.2rem; }
+            .discord-card { padding: 12px 10px 14px 10px; border-radius: 18px; }
             .discord-avatar { width: 72px; height: 72px; margin-bottom: 8px; }
             .discord-name { font-size: 1.3rem; }
             .discord-id { font-size: 0.6rem; }
@@ -414,17 +268,9 @@
             .discord-status { font-size: 0.7rem; margin-top: 6px; }
             .status-dot { width: 8px; height: 8px; }
             .last-seen { font-size: 0.55rem; margin-top: 4px; }
-            .discord-card { padding: 12px 10px 14px 10px; border-radius: 18px; }
-            
             .main-message { font-size: clamp(1rem, 3vw, 1.4rem); }
             .arrow { font-size: 2rem; }
             .arrows { margin-left: -2px; gap: 0px; }
-            
-            .rainbow-header { font-size: 1.2rem; }
-            .email-icon { padding: 6px 10px; }
-            .email-icon i { font-size: 1.1rem; }
-            
-            .header { gap: 6px; padding-bottom: 10px; margin-bottom: 16px; }
         }
     </style>
 </head>
@@ -433,10 +279,6 @@
 <div class="container">
     <header class="header">
         <div class="rainbow-header">GAY NIGGAS</div>
-        <a href="#" class="email-icon" id="emailTrigger">
-            <i class="fas fa-envelope"></i>
-            <span>Mailbox</span>
-        </a>
     </header>
 
     <div class="main-content">
@@ -459,7 +301,7 @@
 
         <div class="right-content">
             <div class="main-message">
-                hmu if youre a gothmommy with thick thighs 
+                hmu if youre a gothmommy with thick thighs
                 <span class="emoji">😘</span><span class="emoji">😋</span>
             </div>
             <div class="arrows">
@@ -473,30 +315,8 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal-overlay" id="emailModal">
-    <div class="modal-box">
-        <button class="modal-close" id="modalCloseBtn"><i class="fas fa-times"></i></button>
-        <h2><i class="fas fa-envelope" style="color:#b0b0ff; margin-right:10px;"></i>Mailbox</h2>
-        <p>Our mailbox is available at <br/><strong>mail.gothmommyboobs.xyz</strong></p>
-        <p style="font-size:0.85rem; color:rgba(255,255,255,0.3);">Registration, login, sending &amp; receiving there.</p>
-        <a href="https://mail.gothmommyboobs.xyz" target="_blank" class="mail-link">
-            <i class="fas fa-external-link-alt" style="margin-right:8px;"></i>Go to Mailbox
-        </a>
-    </div>
-</div>
-
 <script>
-    // ===== MODAL =====
-    const modal = document.getElementById('emailModal');
-    const trigger = document.getElementById('emailTrigger');
-    const closeBtn = document.getElementById('modalCloseBtn');
-    trigger.addEventListener('click', (e) => { e.preventDefault(); modal.classList.add('active'); });
-    closeBtn.addEventListener('click', () => { modal.classList.remove('active'); });
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) modal.classList.remove('active'); });
-
-    // ===== LANYARD API =====
+    // ===== LANYARD API (unverändert) =====
     const USER_ID = '156129424238968832';
     const API_URL = `https://api.lanyard.rest/v1/users/${USER_ID}`;
 
@@ -559,7 +379,6 @@
                 return response.json();
             })
             .then(data => {
-                console.log('Lanyard API:', data);
                 if (data.success && data.data) {
                     const newStatus = data.data.discord_status;
                     const previousStatus = savedStatus;
@@ -568,7 +387,6 @@
                         const now = Math.floor(Date.now() / 1000);
                         localStorage.setItem(LAST_SEEN_KEY, now);
                         savedLastSeen = now;
-                        console.log('🔴 Offline erkannt – Last seen gespeichert:', now);
                     }
 
                     localStorage.setItem(LAST_STATUS_KEY, newStatus);
