@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 12px;
         }
 
         .container {
@@ -37,12 +37,12 @@
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             margin-bottom: 30px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 15px;
         }
 
         .rainbow-header {
-            font-size: clamp(2rem, 5vw, 3.8rem);
+            font-size: clamp(2.2rem, 6vw, 4.2rem);
             font-weight: 900;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -60,20 +60,19 @@
         .email-icon {
             background: rgba(255, 255, 255, 0.08);
             border-radius: 60px;
-            padding: 10px 18px;
+            padding: 12px 20px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             color: #fff;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 500;
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
             text-decoration: none;
-            flex-shrink: 0;
         }
-        .email-icon i { font-size: 1.4rem; color: #b0b0ff; transition: transform 0.3s ease; }
+        .email-icon i { font-size: 1.6rem; color: #b0b0ff; transition: transform 0.3s ease; }
         .email-icon:hover { background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.2); transform: scale(1.02); }
         .email-icon:hover i { transform: rotate(-10deg) scale(1.1); color: #d0d0ff; }
 
@@ -92,11 +91,10 @@
             min-width: 0;
         }
 
-        /* ===== CARD – jetzt für ALLE Geräte etwas kleiner ===== */
         .discord-card {
             background: rgba(30, 30, 45, 0.7);
-            border-radius: 28px;
-            padding: 22px 25px 26px 25px;
+            border-radius: 32px;
+            padding: 30px 35px 35px 35px;
             width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.04);
             box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
@@ -110,69 +108,69 @@
         }
 
         .discord-avatar {
-            width: 110px;
-            height: 110px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             border: 3px solid rgba(255, 255, 255, 0.1);
             object-fit: cover;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
         }
 
         .discord-name {
-            font-size: 1.7rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #ffffff;
             letter-spacing: -0.5px;
         }
         .discord-id {
-            font-size: 0.8rem;
+            font-size: 0.95rem;
             color: rgba(255, 255, 255, 0.4);
             margin-top: 2px;
         }
 
         .discord-badge {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 12px;
             background: rgba(88, 101, 242, 0.18);
-            padding: 5px 14px;
+            padding: 6px 18px;
             border-radius: 30px;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             color: #aab0ff;
             border: 1px solid rgba(88, 101, 242, 0.15);
             font-weight: 500;
         }
         .badge-dot {
             display: inline-block;
-            width: 7px;
-            height: 7px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
-            margin-right: 5px;
+            margin-right: 6px;
             vertical-align: middle;
             transition: background 0.3s ease;
         }
 
         .discord-status {
-            margin-top: 10px;
+            margin-top: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 8px;
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             font-weight: 500;
         }
         .status-dot {
             display: inline-block;
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             transition: background 0.3s ease;
         }
 
         .last-seen {
-            margin-top: 6px;
-            font-size: 0.7rem;
+            margin-top: 8px;
+            font-size: 0.8rem;
             color: rgba(255, 255, 255, 0.35);
             transition: all 0.3s ease;
         }
@@ -183,7 +181,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 16px;
+            gap: 20px;
             text-align: center;
             padding: 10px 0;
             padding-left: 0;
@@ -191,10 +189,10 @@
         }
 
         .main-message {
-            font-size: clamp(1.6rem, 4vw, 3.2rem);
+            font-size: clamp(2rem, 4.5vw, 3.5rem);
             font-weight: 700;
             color: #ffffff;
-            line-height: 1.3;
+            line-height: 1.4;
             letter-spacing: -0.5px;
             text-shadow: 0 4px 30px rgba(200, 150, 255, 0.15);
         }
@@ -209,7 +207,7 @@
             flex-direction: column;
             align-items: center;
             gap: 2px;
-            margin-left: -8px;
+            margin-left: -10px;
         }
         .arrow-link {
             display: block;
@@ -225,7 +223,7 @@
             filter: drop-shadow(0 0 25px rgba(136, 146, 255, 0.9));
         }
         .arrow {
-            font-size: 2.8rem;
+            font-size: 3rem;
             display: block;
             line-height: 1;
             animation: bounceArrowLeft 1.6s infinite ease-in-out;
@@ -295,151 +293,138 @@
         .modal-box .mail-link:hover { background: rgba(255, 255, 255, 0.10); border-color: rgba(255, 255, 255, 0.15); transform: scale(1.02); }
 
         /* ============================================================
-           HANDY-OPTIMIERUNG – CARD WIRD LEICHT GESTRETCHT
+           OPTIMIERTE MEDIA QUERIES – HANDY: 85% BILDSCHIRM, GRÖSSER
            ============================================================ */
 
+        /* Tablets & kleine Laptops */
+        @media (max-width: 1024px) {
+            .container { padding: 20px; }
+            .discord-avatar { width: 110px; height: 110px; }
+            .discord-name { font-size: 1.8rem; }
+            .main-message { font-size: clamp(1.8rem, 4vw, 3rem); }
+            .arrow { font-size: 2.6rem; }
+        }
+
+        /* HANDYS – ALLES WIRD GRÖSSER UND FÜLLT DEN BILDSCHIRM */
         @media (max-width: 768px) {
-            body { padding: 6px; }
-            .container {
-                padding: 14px 12px 18px 12px;
+            body { padding: 6px; } /* Weniger Außenabstand */
+            
+            .container { 
+                padding: 16px 14px 20px 14px; 
                 border-radius: 28px;
+                width: 100%;
+                max-width: 100%;
             }
-            .header {
-                padding-bottom: 12px;
-                margin-bottom: 16px;
-            }
-            .rainbow-header {
-                font-size: 1.5rem;
-                letter-spacing: 1px;
-            }
-            .email-icon {
-                padding: 6px 10px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.08);
-            }
-            .email-icon span { display: none; }
-            .email-icon i { font-size: 1.2rem; }
-
-            .main-content {
+            
+            .main-content { 
                 gap: 4px;
+                flex-wrap: nowrap;
             }
-
-            /* ===== CARD WIRD ETWAS GRÖSSER (gestreckt) ===== */
-            .discord-card {
-                padding: 18px 16px 20px 16px;
-                border-radius: 22px;
+            
+            .discord-card { 
+                padding: 18px 16px 20px 16px; 
+                border-radius: 24px;
             }
-            .discord-avatar {
-                width: 85px;
-                height: 85px;
-                margin-bottom: 10px;
+            
+            .discord-avatar { 
+                width: 90px; 
+                height: 90px; 
+                margin-bottom: 12px;
             }
-            .discord-name {
-                font-size: 1.5rem;
+            
+            .discord-name { 
+                font-size: 1.6rem; 
             }
-            .discord-id {
-                font-size: 0.7rem;
+            .discord-id { 
+                font-size: 0.75rem; 
             }
-            .discord-badge {
-                font-size: 0.65rem;
-                padding: 4px 12px;
-                margin-top: 8px;
+            .discord-badge { 
+                font-size: 0.7rem; 
+                padding: 5px 14px;
+                margin-top: 10px;
             }
-            .badge-dot {
-                width: 6px;
-                height: 6px;
+            .discord-status { 
+                font-size: 0.85rem; 
+                margin-top: 10px;
             }
-            .discord-status {
-                font-size: 0.75rem;
-                margin-top: 8px;
-                gap: 5px;
+            .status-dot { 
+                width: 10px; 
+                height: 10px; 
             }
-            .status-dot {
-                width: 9px;
-                height: 9px;
+            .last-seen { 
+                font-size: 0.7rem; 
+                margin-top: 6px;
             }
-            .last-seen {
-                font-size: 0.6rem;
-                margin-top: 4px;
-            }
-
+            
             .right-content {
                 gap: 12px;
                 padding: 4px 0;
             }
-            .main-message {
-                font-size: clamp(1.2rem, 3.5vw, 1.9rem);
+            
+            .main-message { 
+                font-size: clamp(1.4rem, 3.5vw, 2.2rem); 
                 line-height: 1.2;
             }
-            .arrows {
-                gap: 1px;
+            
+            .arrows { 
+                gap: 1px; 
                 margin-left: -4px;
             }
-            .arrow {
-                font-size: 2.2rem;
+            .arrow { 
+                font-size: 2.4rem; 
             }
+            
+            .rainbow-header { 
+                font-size: 1.6rem; 
+                letter-spacing: 1px;
+            }
+            
+            /* Nur das Icon anzeigen, Text ausblenden */
+            .email-icon span { 
+                display: none; 
+            }
+            .email-icon { 
+                padding: 10px 14px; 
+                border-radius: 50%; /* Rundes Icon */
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .email-icon i { 
+                font-size: 1.4rem; 
+                margin: 0;
+            }
+            .email-icon:hover {
+                background: rgba(255, 255, 255, 0.15);
+                transform: scale(1.05);
+            }
+            
+            .modal-box { padding: 25px 20px; }
+            .modal-box h2 { font-size: 1.4rem; }
         }
 
+        /* KLEINE HANDYS (z.B. iPhone SE, 375px breit) */
         @media (max-width: 420px) {
             body { padding: 4px; }
-            .container {
-                padding: 10px 8px 14px 8px;
-                border-radius: 20px;
-            }
+            .container { padding: 12px 10px 16px 10px; border-radius: 20px; }
+            
+            .discord-avatar { width: 72px; height: 72px; margin-bottom: 8px; }
+            .discord-name { font-size: 1.3rem; }
+            .discord-id { font-size: 0.6rem; }
+            .discord-badge { font-size: 0.55rem; padding: 3px 10px; margin-top: 6px; }
+            .discord-status { font-size: 0.7rem; margin-top: 6px; }
+            .status-dot { width: 8px; height: 8px; }
+            .last-seen { font-size: 0.55rem; margin-top: 4px; }
+            .discord-card { padding: 12px 10px 14px 10px; border-radius: 18px; }
+            
+            .main-message { font-size: clamp(1rem, 3vw, 1.4rem); }
+            .arrow { font-size: 2rem; }
+            .arrows { margin-left: -2px; gap: 0px; }
+            
             .rainbow-header { font-size: 1.2rem; }
-            .email-icon { padding: 4px 8px; }
-            .email-icon i { font-size: 1rem; }
-
-            .discord-card {
-                padding: 14px 12px 16px 12px;
-                border-radius: 18px;
-            }
-            .discord-avatar {
-                width: 70px;
-                height: 70px;
-                margin-bottom: 8px;
-            }
-            .discord-name {
-                font-size: 1.2rem;
-            }
-            .discord-id {
-                font-size: 0.55rem;
-            }
-            .discord-badge {
-                font-size: 0.5rem;
-                padding: 3px 10px;
-                margin-top: 6px;
-            }
-            .badge-dot {
-                width: 5px;
-                height: 5px;
-            }
-            .discord-status {
-                font-size: 0.6rem;
-                margin-top: 6px;
-                gap: 4px;
-            }
-            .status-dot {
-                width: 7px;
-                height: 7px;
-            }
-            .last-seen {
-                font-size: 0.5rem;
-                margin-top: 3px;
-            }
-
-            .right-content {
-                gap: 8px;
-            }
-            .main-message {
-                font-size: clamp(1rem, 3vw, 1.4rem);
-            }
-            .arrow {
-                font-size: 1.8rem;
-            }
-            .arrows {
-                margin-left: -2px;
-            }
+            .email-icon { padding: 6px 10px; }
+            .email-icon i { font-size: 1.1rem; }
+            
+            .header { gap: 6px; padding-bottom: 10px; margin-bottom: 16px; }
         }
     </style>
 </head>
@@ -574,6 +559,7 @@
                 return response.json();
             })
             .then(data => {
+                console.log('Lanyard API:', data);
                 if (data.success && data.data) {
                     const newStatus = data.data.discord_status;
                     const previousStatus = savedStatus;
@@ -582,6 +568,7 @@
                         const now = Math.floor(Date.now() / 1000);
                         localStorage.setItem(LAST_SEEN_KEY, now);
                         savedLastSeen = now;
+                        console.log('🔴 Offline erkannt – Last seen gespeichert:', now);
                     }
 
                     localStorage.setItem(LAST_STATUS_KEY, newStatus);
